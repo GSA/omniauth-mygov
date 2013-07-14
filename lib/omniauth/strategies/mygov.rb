@@ -19,8 +19,26 @@ module OmniAuth
 
       info do
         {
-          :name => raw_info['user']['name'],
-          :email => raw_info['user']['email']
+          :email => raw_info['email'] || nil,
+          :id => raw_info['id'] || nil,
+          :title => raw_info['title'] || nil,
+          :first_name => raw_info['first_name'] || nil,
+          :middle_name => raw_info['middle_name'] || nil,
+          :last_name => raw_info['last_name'] || nil,
+          :suffix => raw_info['suffix'] || nil,
+          :address => raw_info['address'] || nil,
+          :address2 => raw_info['address2'] || nil,
+          :city => raw_info['city'] || nil,
+          :state => raw_info['state'] || nil,
+          :zip => raw_info['zip'] || nil,
+          :phone_number => raw_info['phone_number'] || nil,
+          :mobile_number => raw_info['mobile_number'] || nil,
+          :gender => raw_info['gender'] || nil,
+          :marital_status => raw_info['marital_status'] || nil,
+          :is_parent => raw_info['is_parent'] || nil,
+          :is_retired => raw_info['is_retired'] || nil,
+          :is_veteran => raw_info['is_veteran'] || nil,
+          :is_student => raw_info['is_student'] || nil
         }
       end
 
