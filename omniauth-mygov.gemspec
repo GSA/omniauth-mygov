@@ -19,4 +19,9 @@ Gem::Specification.new do |gem|
   
   gem.add_dependency 'omniauth', '~> 1.0'
   gem.add_dependency 'omniauth-oauth2', '~> 1.0'
+  
+  gem.post_install_message = <<-MESSAGE
+  !    The 'omniauth-mygov' gem has been deprecated and has been replaced by 'omniauth-myusa'.
+  !    See: https://github.com/GSA-OCSIT/omniauth-myusa
+  MESSAGE
 end

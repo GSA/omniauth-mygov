@@ -1,12 +1,12 @@
 # Omniauth::Mygov
 
-TODO: Write a gem description
+NOTE: this gem has been deprecated.  Please update your project to use the omniauth-myusa gem (https://github.com/GSA-OCSIT/omniauth-myusa)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-mygov'
+    gem 'omniauth-mygov', :git => 'https://github.com/GSA-OCSIT/omniauth-mygov.git'
 
 And then execute:
 
